@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>互助随机举报</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="random.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>互助随机举报</h1>
+        <h2>611Study 是指“早6点上学，晚11点放学，生病 ICU”。</h2>
+        <p><b>您随手打出去的一个电话，说不定就是学生们获得自由的一份希望。<br>学生们的命也是命。Student lives matter.</b><a href="https://docs.google.com/spreadsheets/d/1P48quxwMv9XsYQhXjLOvTRRq8tt3ahJnkbXo4VCxjLc/edit"><br>数据来源表格</a>（在国内无法访问）</p>
+            <p>您不需要在电话里多说什么。您只需要按下面的数据反映情况就可以。</p>
+            <p>您不必担心遭到学校的报复。学校的手伸不了那么长。当然，如果您实在担心，可以选择不在您所在省份以内的学校进行举报。</p>
+            <p>如果您没有时间打电话，可以将下面的学校信息截图，在抖音/微博/B站等渠道发布，或者QQ/微信群聊，让更多人知道这些学校的事情。<br><i>当然如果学生评论太敏感可以截去或者打马赛克</i></p>
+        <button id="randomButton">获取随机学校</button>
+        <table id="schoolInfo">
+            <thead>
+                <tr>
+                    <th>时间</th>
+                    <th>省份</th>
+                    <th>城市</th>
+                    <th>区县</th>
+                    <th>学校名称</th>
+                    <th>年级</th>
+                    <th>每周在校学习小时数</th>
+                    <th>每月假期天数</th>
+                    <th>寒假放假天数</th>
+                    <th>24年学生自杀数</th>
+                    <th>上学时间</th>
+                    <th>放学时间 含晚自习</th>
+                    <th>寒假补课收费总价格</th>
+                    <th>学生的评论</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="schoolData">
+                    <td colspan="14">点击按钮获取数据</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="contactInfo">联系电话: 未知</div>
+        <button id="callButton" style="display: none;">拨打市长热线</button>
+    </div>
+    <br>
+    <div class="container">
+        <h2>如何投稿您的学校？</h2>
+        <p>首先确保您拥有访问国际互联网的能力，然后在<a href="https://docs.google.com/forms/d/e/1FAIpQLSfqsh6MiC4vsQN4FBskNByNUTUpSieLifZQbRv8yEjRTFKxNw/viewform">链接</a>处进行匿名投稿。由于表格数据和我们并非同一个组织，所以我们需要定期下载学校列表，因此时效性可能不会太高。</p>
+        <h2>如何复制我们的网页？</h2>
+        <p>通过下载<a href="copy.zip">本文件</a>并将其架设到您的服务器或网页托管服务（如 GitHub Pages 等）即可，并再次将您下载的文件复制到网页架设的目录中。这样可以有效防止这个网页被屏蔽从而无法互助举报。当然，您需要在有时间的时候访问本页上方的数据来源表格并点击文件 > 下载 > 制表符分隔值（.tsv）下载最新版本的表格文件并替换掉压缩包里的 school-list.tsv 文件。本网页不保留任何权利，并欢迎、鼓励复制，修改以及转载。如果您担心学生评价过于敏感，可以注释掉或者删去 index.html 中“学生评论”的 th 标签。当然，我们欢迎您在您的复制站点中更新学校列表。</p>
+        <h2>611Study.ICU 是什么？</h2>
+        <p>是由一位知名博主效仿 996.ICU 所建立的保护学生应有权利的项目。也是本网页的数据来源。</p>
+        <h2>想说的话</h2>
+        <p>希望这个网页能通过不断地复制、传播在国内遍地开花。</p>
+    </div>
+</body>
+</html>
